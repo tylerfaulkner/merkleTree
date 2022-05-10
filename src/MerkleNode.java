@@ -7,4 +7,12 @@ public class MerkleNode extends Node {
         this.left = left;
         this.right = right;
     }
+
+    public Node getLeft() {
+        return left;
+    }
+
+    public Node getRight(){
+        return right;
+    }
 }

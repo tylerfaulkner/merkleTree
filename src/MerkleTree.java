@@ -5,6 +5,9 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A Merkle Tree implementation to verify file integrity
+ */
 public class MerkleTree {
 
     private List<Node> leafNodes;
@@ -26,12 +29,22 @@ public class MerkleTree {
         return nodes;
     }
 
+    public String getRootHash(){
+        return this.root.getHash();
+    }
+
     private Node generateLeaF(String dataBlock){
         return new Node(createSHAHash(dataBlock));
     }
 
     public void appendDataBlock(String dataBlock){
         this.leafNodes.add(generateLeaF(dataBlock));
+    }
+
+    public void appendDataBlocks(List<String> dataBlocks){
+        for (String dataBlock : dataBlocks){
+            this.appendDataBlock(dataBlock);
+        }
     }
 
     public void buildTree(){
@@ -77,7 +90,42 @@ public class MerkleTree {
     }
 
     private List<MerkleProofSegment> buildProof(MerkleNode parentNode, Node child){
-        
+        List<MerkleProofSegment> proof = new ArrayList<MerkleProofSegment>();
+        do{
+            Direction dir = Direction.LEFT;
+            String otherNodeHash = parentNode.getLeft().getHash();
+            if (parentNode.getLeft().getHash() == child.getHash()){
+                dir = Direction.RIGHT;
+                otherNodeHash = parentNode.getRight().getHash();
+            }
+
+            proof.add(new MerkleProofSegment(otherNodeHash, dir));
+
+            parentNode = parentNode.getParent();
+            child = parentNode;
+
+        }while (parentNode != null);
+        return proof;
+    }
+
+    public Boolean verifyTree(String leafHash, List<MerkleProofSegment> proof){
+        String testRoot = buildRootFromProof(leafHash, proof);
+
+        return testRoot.equals(this.root.getHash());
+    }
+
+    public String buildRootFromProof(String leafHash, List<MerkleProofSegment> proof){
+        String tempHash = leafHash;
+
+        for (MerkleProofSegment segment : proof){
+            if (segment.getDirection() == Direction.LEFT){
+                tempHash = createSHAHash(segment.getHash().concat(tempHash));
+            } else {
+                tempHash = createSHAHash(leafHash.concat(segment.getHash()));
+            }
+        }
+
+        return tempHash;
     }
 
     private Node findLeafNode(String leafHash){

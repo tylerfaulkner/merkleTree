@@ -6,6 +6,14 @@ public class MerkleProofSegment {
         this.hash = hash;
         this.dir = dir;
     }
+
+    public String getHash(){
+        return hash;
+    }
+
+    public Direction getDirection(){
+        return dir;
+    }
 }
 
 enum Direction{
