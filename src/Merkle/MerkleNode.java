@@ -1,3 +1,8 @@
+package Merkle;
+
+/**
+ * Acts as the branch nodes for the tree.
+ */
 public class MerkleNode extends Node {
     private Node left;
     private Node right;

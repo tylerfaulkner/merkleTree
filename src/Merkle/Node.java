@@ -1,3 +1,9 @@
+package Merkle;
+
+/**
+ * A Base node class for the Merkle Nodes
+ * Acts as the Leaf Node Class
+ */
 public class Node {
     private String hash;
     private MerkleNode parent = null;

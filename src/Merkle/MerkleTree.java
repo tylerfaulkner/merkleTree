@@ -1,3 +1,5 @@
+package Merkle;
+
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -21,24 +23,35 @@ public class MerkleTree {
         leafNodes = generateLeaves(dataBlocks);
     }
 
+    /**
+     * Generates the leafNodes for the tree from the given data
+     * @param dataBlocks tree data
+     * @return List of leaf nodes
+     */
     private List<Node> generateLeaves(List<String> dataBlocks){
         List<Node> nodes = new ArrayList<Node>();
         for (String data : dataBlocks){
-            nodes.add(generateLeaF(data));
+            nodes.add(generateLeaf(data));
         }
         return nodes;
     }
 
     public String getRootHash(){
-        return this.root.getHash();
+        if(this.root != null) {
+            return this.root.getHash();
+        } else {
+            return "";
+        }
     }
 
-    private Node generateLeaF(String dataBlock){
+    public Node getRootNode() { return this.root; }
+
+    private Node generateLeaf(String dataBlock){
         return new Node(createSHAHash(dataBlock));
     }
 
     public void appendDataBlock(String dataBlock){
-        this.leafNodes.add(generateLeaF(dataBlock));
+        this.leafNodes.add(generateLeaf(dataBlock));
     }
 
     public void appendDataBlocks(List<String> dataBlocks){
@@ -47,14 +60,22 @@ public class MerkleTree {
         }
     }
 
+    /**
+     * Builds Tree using leaf nodes
+     */
     public void buildTree(){
         if (!this.leafNodes.isEmpty()) {
             buildTree(this.leafNodes);
         }
     }
-    
+
+    /**
+     * Recursive method to build tree from the bottom up
+     * @param layerNodes the previous layer to generate a new layer off of.
+     */
     private void buildTree(List<Node> layerNodes){
         if(layerNodes.size()==1){
+            //Stops Recursion once the list of nodes is one and sets the root node.
             this.root = layerNodes.get(0);
         } else {
             List<Node> nextLayer = new ArrayList<Node>();
@@ -76,52 +97,77 @@ public class MerkleTree {
                 }
                 nextLayer.add(parent);
             }
-            buildTree(layerNodes);
+            buildTree(nextLayer);
         }
     }
 
+    /**
+     * Creates a proof list given a leafHash
+     * @param leafHash the hash of a leaf
+     * @return List of Proof segments (empty of leaf not in set)
+     */
     public List<MerkleProofSegment> createProof(String leafHash){
         Node leafNode = findLeafNode(leafHash);
-        if (leafNode == null){
+        if (leafNode == null || leafNode.getParent() == null){
             return new ArrayList<MerkleProofSegment>();
         } else {
             return buildProof(leafNode.getParent(), leafNode);
         }
     }
 
+    /**
+     * Builds and return the Merkle Proof For a Given leaf node
+     * This is a bubble-up algorithm
+     * @param parentNode the parent of the child
+     * @param child the starting leaf node
+     * @return
+     */
     private List<MerkleProofSegment> buildProof(MerkleNode parentNode, Node child){
         List<MerkleProofSegment> proof = new ArrayList<MerkleProofSegment>();
         do{
             Direction dir = Direction.LEFT;
             String otherNodeHash = parentNode.getLeft().getHash();
-            if (parentNode.getLeft().getHash() == child.getHash()){
+            if (otherNodeHash == child.getHash()){
                 dir = Direction.RIGHT;
                 otherNodeHash = parentNode.getRight().getHash();
             }
 
             proof.add(new MerkleProofSegment(otherNodeHash, dir));
 
-            parentNode = parentNode.getParent();
+            //Move up the tree
             child = parentNode;
+            parentNode = parentNode.getParent();
 
         }while (parentNode != null);
         return proof;
     }
 
+    /**
+     * Build a rootHash from the proof and compares the proof rootHash against the tress rootHash
+     * @param leafHash the hash the proof was created based on
+     * @param proof The list of Proof Segments to build a test root hash
+     * @return True if trees are the same, false otherwise
+     */
     public Boolean verifyTree(String leafHash, List<MerkleProofSegment> proof){
         String testRoot = buildRootFromProof(leafHash, proof);
 
         return testRoot.equals(this.root.getHash());
     }
 
-    public String buildRootFromProof(String leafHash, List<MerkleProofSegment> proof){
+    /**
+     * Builds a root hash from a proof and starting leafhash
+     * @param leafHash the lead hash of the proof
+     * @param proof The list of hashes leading to the root
+     * @return the rootHash
+     */
+    public static String buildRootFromProof(String leafHash, List<MerkleProofSegment> proof){
         String tempHash = leafHash;
 
         for (MerkleProofSegment segment : proof){
             if (segment.getDirection() == Direction.LEFT){
                 tempHash = createSHAHash(segment.getHash().concat(tempHash));
             } else {
-                tempHash = createSHAHash(leafHash.concat(segment.getHash()));
+                tempHash = createSHAHash(tempHash.concat(segment.getHash()));
             }
         }
 
@@ -139,7 +185,7 @@ public class MerkleTree {
         return leafNode;
     }
 
-    public String createSHAHash(String input) {
+    public static String createSHAHash(String input) {
         try {
             String hashtext = null;
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -154,7 +200,7 @@ public class MerkleTree {
         return null;
     }
 
-    private String convertToHex(final byte[] messageDigest) {
+    private static String convertToHex(final byte[] messageDigest) {
         BigInteger bigint = new BigInteger(1, messageDigest);
         String hexText = bigint.toString(16);
         while (hexText.length() < 32) {

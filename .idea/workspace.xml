@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7ce431f-c25b-4072-87d7-72a74dfbc4e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MerkleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MerkleNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MerkleProofSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MerkleProofSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MerkleTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MerkleTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/com_bluecatcode_junit_junit_4_11_extended_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/MerkleTreeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merkle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/merkle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MerkleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Merkle/MerkleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MerkleProofSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Merkle/MerkleProofSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MerkleTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Merkle/MerkleTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Merkle/Node.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,76 +22,68 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MerkleNode.java">
+        <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding>
                 <element signature="e#254#255#0" expanded="true" />
                 <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-144">
+              <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1283#1284#0" expanded="true" />
+                <element signature="e#1342#1343#0" expanded="true" />
+                <element signature="e#3846#3866#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleProofSegment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+              <folding>
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Merkle/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MerkleTree.java">
+        <entry file="file://$PROJECT_DIR$/src/test/MerkleTreeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="163" column="5" lean-forward="true" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#597#603#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-                <element signature="e#909#910#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#1020#1021#0" expanded="true" />
-                <element signature="e#1516#1522#0" expanded="true" />
-                <element signature="e#2924#2944#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MerkleProofSegment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              <folding>
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding>
-                <element signature="e#78#79#0" expanded="true" />
-                <element signature="e#109#110#0" expanded="true" />
-                <element signature="e#140#141#0" expanded="true" />
-                <element signature="e#166#167#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,6 +119,10 @@
         <option value="$PROJECT_DIR$/src/MerkleNode.java" />
         <option value="$PROJECT_DIR$/src/MerkleProofSegment.java" />
         <option value="$PROJECT_DIR$/src/MerkleTree.java" />
+        <option value="$PROJECT_DIR$/test/MerkleTreeTests.java" />
+        <option value="$PROJECT_DIR$/src/test/MerkleTreeTests.java" />
+        <option value="$PROJECT_DIR$/src/Merkle/MerkleTree.java" />
+        <option value="$PROJECT_DIR$/src/Merkle/MerkleProofSegment.java" />
       </list>
     </option>
   </component>
@@ -137,6 +138,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,20 +151,35 @@
               <item name="merkle" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="merkle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="merkle" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Merkle" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\faulknert\Desktop\merkle\src" />
+      <recent name="C:\Users\faulknert\Desktop\merkle" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -175,6 +192,96 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MerkleTreeTests">
+    <configuration name="MerkleTreeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="merkle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MerkleTreeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerkleTreeTests.testGetProof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="merkle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MerkleTreeTests" />
+      <option name="METHOD_NAME" value="testGetProof" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerkleTreeTests.testProof" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="merkle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MerkleTreeTests" />
+      <option name="METHOD_NAME" value="testProof" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerkleTreeTests.testProofBetweenDifferentTrees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="merkle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MerkleTreeTests" />
+      <option name="METHOD_NAME" value="testProofBetweenDifferentTrees" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MerkleTreeTests.testProofBetweenSameTrees" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="merkle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MerkleTreeTests" />
+      <option name="METHOD_NAME" value="testProofBetweenSameTrees" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MerkleTreeTests" />
+        <item itemvalue="JUnit.MerkleTreeTests.testProofBetweenDifferentTrees" />
+        <item itemvalue="JUnit.MerkleTreeTests.testProofBetweenSameTrees" />
+        <item itemvalue="JUnit.MerkleTreeTests.testProof" />
+        <item itemvalue="JUnit.MerkleTreeTests.testGetProof" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -197,118 +304,143 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 15m 26s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 15m 31s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 16m 40s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 19m 00s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 19m 05s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 21m 20s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 24m 13s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProof - 2022.05.10 at 11h 24m 17s.xml">
+      <configuration name="MerkleTreeTests.testProof" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProofBetweenSameTrees - 2022.05.10 at 11h 30m 15s.xml">
+      <configuration name="MerkleTreeTests.testProofBetweenSameTrees" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MerkleTreeTests_testProofBetweenDifferentTrees - 2022.05.10 at 11h 30m 19s.xml">
+      <configuration name="MerkleTreeTests.testProofBetweenDifferentTrees" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122732125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Merkle/MerkleTree.java</url>
+          <line>162</line>
+          <properties class="Merkle.MerkleTree" method="buildRootFromProof">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LeafNode.java">
+    <entry file="file://$PROJECT_DIR$/src/LeafNode.java" />
+    <entry file="file://$PROJECT_DIR$/src/Direction.java" />
+    <entry file="file://$PROJECT_DIR$/src/Merkle/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Direction.java">
+    <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#78#79#0" expanded="true" />
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MerkleNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#254#255#0" expanded="true" />
             <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MerkleProofSegment.java">
+    <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MerkleTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="163" column="5" lean-forward="true" selection-start-line="163" selection-start-column="5" selection-end-line="163" selection-end-column="5" />
+        <state relative-caret-position="-144">
+          <caret line="160" column="27" selection-start-line="160" selection-start-column="27" selection-end-line="160" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#597#603#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1516#1522#0" expanded="true" />
-            <element signature="e#2924#2944#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#3846#3866#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Merkle/MerkleProofSegment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="81" selection-start-line="4" selection-start-column="81" selection-end-line="4" selection-end-column="81" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/MerkleTreeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -388,6 +520,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>com.bluecatcode.junit:junit-4.11-extended:1.0.4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
